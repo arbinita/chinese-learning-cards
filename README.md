@@ -48,6 +48,12 @@ This project provides a simple and intuitive learning experience using a "guess 
 
 The application can be deployed using platforms such as Vercel for public access.
 
+## Live Demo
+
+https://chinese-learning-cards.vercel.app
+
 ## Author
 
 Arbinita Longjam
+# chinese-learning-cards
+An interactive and responsive Chinese vocabulary learning app using flashcards, images, and audio to help users guess and learn words intuitively.
