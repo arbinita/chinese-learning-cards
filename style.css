@@ -259,7 +259,7 @@ button:disabled {
 @media (max-width: 600px) {
   .card {
     width: 100vw;
-    height: 85vh;       /* taller on phone */
+    height: 70vh;       /* taller on phone */
     aspect-ratio: auto; /* allow height control */
   }
 }
