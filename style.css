@@ -7,268 +7,11 @@ body {
 }
 
 .app {
-  text-align: center;
-  padding-top: 40px;
-}
-
-/* ===== TOP HEADER ===== */
-.top-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* ===== BIG TITLE ===== */
-.guess-header {
-  font-size: 28px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 15px;
-  letter-spacing: 0.8px;
-  text-shadow: 0 3px 8px rgba(0,0,0,0.25);
-}
-
-
-/* ===== DAY PILLS ===== */
-.days {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.day-pill {
-  width: 50px;
-  height: 50px;
-  border-radius: 20px;
-  background: #2c4a6e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.day-pill.active {
-  background: #e24a33;
-}
-
-/* ===== INFO ===== */
-.info {
-  margin-bottom: 20px;
-  opacity: 0.7;
-  font-size: 14px;
-}
-
-/* ===== CARD WRAPPER ===== */
-.card-wrapper {
-  width: 360px;
-  margin: 0 auto;
-}
-
-/* ===== CARD ===== */
-.card {
-  width: 100%;
-  height: 460px;
-  perspective: 1000px;
-  border-radius: 20px;
-  overflow: hidden; /* FIXED */
-}
-
-/* ===== INNER ===== */
-.card-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-  will-change: transform;
-}
-
-.card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
-/* ===== FRONT + BACK ===== */
-.front,
-.back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #f4f4f4;
-  color: #333;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-/* ===== BACK SIDE ===== */
-.back {
-  transform: rotateY(180deg);
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 16px;
   box-sizing: border-box;
-}
-
-/* ===== FRONT ===== */
-.front h3 {
-  margin: 20px 0 5px;
-  font-size: 20px;
-}
-
-/* ✅ NEW TEXT STYLE */
-.guess-text {
-  font-size: 16px;
-  color: #3b5b7a;
-  margin-bottom: 10px;
-}
-
-/* ===== IMAGE BOX ===== */
-.image-box {
-  background: #eaeaea;
-  margin: 10px;
-  border-radius: 15px;
-  height: 280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.image-box img {
-  width: 85%;
-  height: 85%;
-  object-fit: contain;
-}
-
-/* ===== FLIP TEXT ===== */
-.flip-text {
-  margin-top: auto;
-  background: #2c4a6e;
-  color: white;
-  padding: 10px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: 500;
   text-align: center;
-}
-
-/* ===== BACK TEXT ===== */
-#han {
-  font-family: 'Noto Serif TC', serif;
-  font-size: 64px;
-  color: #c0392b;
-  margin: 10px 0;
-}
-
-#py {
-  color: #6b7c93;
-  margin-bottom: 10px;
-}
-
-#en {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-/* ===== SENTENCE BOX ===== */
-.sentence-box {
-  width: 100%;
-  box-sizing: border-box;
-  background: #e9edf1;
-  border: 2px solid #7c8ea3;
-  border-radius: 16px;
-  padding: 15px;
-  text-align: left;
-}
-
-#sentence-han {
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-#sentence-py {
-  color: #6b7c93;
-  margin-bottom: 6px;
-}
-
-#sentence-en {
-  color: #7a8a9a;
-}
-
-/* ===== BUTTONS ===== */
-.controls {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.controls button {
-  font-size: 18px;
-  padding: 16px 38px;
-  border-radius: 24px;
-  border: none;
-  cursor: pointer;
-}
-
-/* LEFT BUTTON */
-#prevBtn {
-  background: white;
-  color: #1f3b5b;
-}
-
-/* RIGHT BUTTONS */
-#nextBtn,
-#nextDayBtn {
-  background: #e24a33;
-  color: white;
-}
-
-/* DISABLED */
-button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-/* AUDIO BUTTON */
-#audioBtn {
-  background: none;
-  border: none;
-  font-size: 26px;
-  cursor: pointer;
-  margin: 10px 0;
-}
-
-#audioBtn:hover {
-  transform: scale(1.1);
-}
-
-.guess-header {
-  font-family: 'Cinzel', serif;
-  font-size: 44px;
-  font-weight: 900;
-  color: #f3f3f3;
-  letter-spacing: 2px;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}/* ===== GLOBAL ===== */
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background: #94a6bb;
-  color: white;
-
-  /* Center app like mobile UI */
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.app {
-  text-align: center;
-  padding: 20px;
 }
 
 /* ===== HEADER ===== */
@@ -288,7 +31,7 @@ body {
 /* ===== DAY PILLS ===== */
 .days {
   display: flex;
-  flex-wrap: wrap; /* ✅ important */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
@@ -318,15 +61,17 @@ body {
 
 /* ===== CARD WRAPPER ===== */
 .card-wrapper {
-  width: 90%;
-  max-width: 360px;
+  width: 100%;
+  max-width: 420px;
   margin: 0 auto;
 }
 
 /* ===== CARD ===== */
 .card {
   width: 100%;
-  aspect-ratio: 3 / 4; /* ✅ responsive height */
+  max-width: 420px;   /* prevents it from being too wide on desktop */
+  aspect-ratio: 3 / 4.5;
+  margin: 0 auto;
   perspective: 1000px;
   border-radius: 20px;
   overflow: hidden;
@@ -339,7 +84,6 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
-  will-change: transform;
 }
 
 .card.flipped .card-inner {
@@ -357,7 +101,6 @@ body {
   background: #f4f4f4;
   color: #333;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -378,12 +121,18 @@ body {
   font-size: clamp(16px, 4vw, 22px);
 }
 
+.guess-text {
+  font-size: 14px;
+  color: #3b5b7a;
+  margin-bottom: 10px;
+}
+
 /* ===== IMAGE BOX ===== */
 .image-box {
   background: #eaeaea;
   margin: 10px;
   border-radius: 15px;
-  height: 60%; /* ✅ responsive */
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,8 +141,8 @@ body {
 
 .image-box img {
   width: 100%;
-  height: 85%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ===== FLIP TEXT ===== */
@@ -405,7 +154,6 @@ body {
   font-size: clamp(10px, 2.5vw, 12px);
   letter-spacing: 1px;
   font-weight: 500;
-  text-align: center;
 }
 
 /* ===== BACK TEXT ===== */
@@ -431,12 +179,12 @@ body {
 /* ===== SENTENCE BOX ===== */
 .sentence-box {
   width: 100%;
-  box-sizing: border-box;
   background: #e9edf1;
   border: 2px solid #7c8ea3;
   border-radius: 16px;
   padding: 15px;
   text-align: left;
+  box-sizing: border-box;
 }
 
 #sentence-han {
@@ -499,4 +247,19 @@ button:disabled {
 
 #audioBtn:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 95vw;        /* fills most of screen */
+    max-width: none;    /* remove desktop limit */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100vw;
+    height: 85vh;       /* taller on phone */
+    aspect-ratio: auto; /* allow height control */
+  }
 }
