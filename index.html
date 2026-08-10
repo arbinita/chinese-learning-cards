@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chinese Cards</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <div class="top-header">
+    <div class="guess-header">Guess the word in Chinese</div>
+  </div>
+
+  <!-- DAY SELECTOR -->
+  <div class="days" id="days"></div>
+
+  <!-- INFO -->
+  <div class="info" id="infoText"></div>
+
+  <!-- CARD -->
+  <div class="card-wrapper">
+    <div class="card" id="card">
+      <div class="card-inner">
+
+        <!-- FRONT -->
+        <div class="front">
+          <h3 id="word-title">hello</h3>
+
+          <div class="image-box">
+            <img id="card-img" src="" />
+          </div>
+
+          <div class="flip-text">TAP TO REVEAL THE WORD</div>
+        </div>
+
+        <!-- BACK -->
+        <div class="back">
+          <h2 id="han"></h2>
+          <p id="py"></p>
+          <p id="en"></p>
+
+          <button id="audioBtn">🔊</button>    
+
+          <div class="sentence-box">
+            <p id="sentence-han"></p>
+            <p id="sentence-py"></p>
+            <p id="sentence-en"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="controls">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+      <button id="nextDayBtn" style="display:none;">Next Chapter</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
